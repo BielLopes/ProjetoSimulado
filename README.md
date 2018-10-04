@@ -1,4 +1,4 @@
 # ProjetoSimulado
 
-Fazer um sistema web de venda de pacote de viagens
-###BORA LA CARAI!!!!
+Fazer um saite simples para venda de pacotes de viagen
+#BORA LA CARAI!!!!
