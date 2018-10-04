@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/cod.css">
+<link rel="stylesheet" href="Css/normalize.css">
+<title>Danutur Turismo</title>
+</head>
+
+<body>
+<section>
+
+  <script>
+  function myFunction3() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+
+
+<!--Avisos de Login-->
+<div id="LoginIncorreto" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="sumir('LoginIncorreto')" class="w3-closebtn">&times;</span>
+      <p><h2>Nome de Usuário ou Senha INCORREO!!!</h2></p>
+       </div>
+  </div>
+</div>
+
+<!--Fim dos Avisos de LOGIM-->
+
+
+<div id="contatos" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('contatos').style.display='none'" class="w3-closebtn">&times;</span>
+      <p><h2>Email: calendario.cedaf@gmail.com</h2></p>
+       </div>
+  </div>
+</div>
+<div id="sobre" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('sobre').style.display='none'" class="w3-closebtn">&times;</span>
+      <p><h2>Danutur - Pacotes de Viajens</h2></p>
+    </div>
+  </div>
+</div>
+
+
+
+<script language="Javascript">
+function sumir(i) {
+    document.getElementById(i).style.display = "none";
+}
+
+function aparecer(i) {
+    document.getElementById(i).style.display = "initial";
+
+}
+</script>
+
+<nav >
+<ul class="w3-navbar w3-card-2 w3-white ">
+  <li><a href="index.php" class="w3-grey"><img src="imagens/home.png" style="width:19px;margin-bottom:-2px;">Danutur</a></li>
+  <li><a href="#">Destinos</a></li>
+  <li><a href="#">Hotéis</a></li>
+  <li><a href="#">Promoções</a></li>
+  <li><a href="#" onclick="document.getElementById('contatos').style.display='block'">Contatos</a></li>
+  <li><a href="#" onclick="document.getElementById('sobre').style.display='block'">Sobre</a></li>
+  <form id="pesquisa_menu" method="get">
+  <li class="w3-right" style="padding-bottom: 0.1%; padding-top:0.1%; margin-left:0.5%; margin-right: 0.5%;"><a href="#" onClick="document.getElementById('pesquisa_menu').submit();"><img src="imagens/pesquisa.jpeg" style="width:30px;"></a></li>
+  <li class="w3-right"><input class="w3-input w3-border" type="text"></li>
+  </form>
+
+</ul>
+</nav>
+</section>
+<section >
+<div class="w3-content w3-section" style="max-width:95%;">
+  <img class="mySlides not_img" src="imagens/H1.jpg" >
+  <img class="mySlides not_img" src="imagens/H2.jpg" >
+  <img class="mySlides not_img" src="imagens/H3.jpg" >
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+	}
+</script>
+</section>
+<section>
+  <br/>
+  <br/>
+  <br/>
+</section>
+<footer id="rodape"  >
+      <!--rodape-->
+      <div class="container">
+        <img src="imagens/logo.png" alt="Logo da Danutur">
+
+        <a href="facebook.com" style=""><img src="imagens/facebook.png" alt="Link Externo Facebook"></a>
+        <a href="twitter.com"><img src="imagens/twitter.png" alt="Link Externo twitter"></a>
+        <a href="googleplus.com"><img src="imagens/googleplus.png" alt="Link Externo GolglePlus"></a>
+
+      </div>
+</footer>
+	</body>
+
+
+</html>
