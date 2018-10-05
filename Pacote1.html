@@ -3,9 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/cod.css">
+<link rel="stylesheet" href="css/cod2.css">
 <link rel="stylesheet" href="Css/normalize.css">
-<title>Danutur Turismo</title>
+<title>Pacote Para Honolulu</title>
 </head>
 
 <body>
@@ -70,88 +70,58 @@ function aparecer(i) {
 </ul>
 </nav>
 </Header>
-<section >
 </br>
-</br>
-
-<div class="w3-content w3-section" style="max-width:95%;">
-  <img class="mySlides not_img" src="imagens/H1.jpg" >
-  <img class="mySlides not_img" src="imagens/H2.jpg" >
-  <img class="mySlides not_img" src="imagens/H3.jpg" >
-</div>
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-
-    if (slideIndex> slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-	}
-</script>
-</section>
-<section>
-  <br/>
-</section>
-
-<!--Ofertas-->
-<section id="Ofertas">
-  <h2 class="Ofertante" style="">Ofertas</h2>
+<section id="Principal">
+  <h1>Honolulu</h1>
   <ol>
+    <li><img src="imagens/Honolulu.jpg" alt="Imagem Principal de Honolulu"></li>
     <li>
-        <a href="Pacote1.html">
-        <img src="imagens/imagem.jpg" alt="Honolulu">
-        <figcaption  >Pacte com tudo incluso para Honolulu    </br>   R$5600,00</figcaption>
-        </a>
-    </li>
-    <li>
-        <a href="Destino2.html">
-        <img src="imagens/H2.jpg" alt="Destino2">
+    <div>
+      <h2>O Ceu Na Terra</h2>
+      </br>
+      <p>Honolulu é muito pica Carai, todo mundo tem de curtir esse role ta ligado. Tipo que é bom pra caralho, e é melhor se for tirando onda</p>
+      <ul>
+        <li>Lugarzinho do Caralho</li>
+        <li>Só Mulheres Top</li>
+        <li>Se tu não for, é muito otário</li>
+        <li> Vai Saporra maluco</li>
 
-        <figcaption > Pacte com tudo incluso para Destino2     </br>  R$######</figcaption>
-        </a>
+      </ul>
+    </div>
     </li>
-    <li>
-        <a href="Destino3.html">
-        <img src="imagens/H1.jpg" alt="Destino3">
-        <figcaption style="font-family: 'Topzera'">Pacte com tudo incluso para Destino3   </br>    R$#######</figcaption>
-        </a>
-   </li>
   </ol>
-  <button id="BtnConversao" style="" class="w3-btn w3-blue w3-round">Compre Agora</button>
-  </br>
-  </br>
 </section>
-
-<footer id="rodape"  >
+<section >
+  <div id="Images">
+  <ol>
+    <li><img src="imagens/Hnl1.jpg"></li>
+    <li><img src="imagens/Hnl2.jpg"></li>
+    <li><img src="imagens/Hnl3.jpg"></li>
+    <li><img src="imagens/Hnl4.jpg"></li>
+    <li><img src="imagens/Hnl5.jpg"></li>
+    <li><img src="imagens/Hnl6.jpg"></li>
+  </ol>
+</div>
+  <div class="Informacao">
+  <h2>Detalhes do Pacote</h2>
+  <ul>
+    <li>Vantagem 1</li>
+    <li>Vantagem 2</li>
+    <li>Vantagem 3</li>
+    <li>Vantagem 4</li>
+  </ul>
+<button id="BtnConversao" style="" class="w3-btn w3-blue w3-round">Compre Agora</button>
+</div>
+</section>
+<footer id="rodape">
       <!--rodape-->
       <div class="container">
         <img src="imagens/logo.png" alt="Logo da Danutur">
-
         <a href="facebook.com" style=""><img src="imagens/facebook.png" alt="Link Externo Facebook"></a>
         <a href="twitter.com"><img src="imagens/twitter.png" alt="Link Externo twitter"></a>
         <a href="googleplus.com"><img src="imagens/googleplus.png" alt="Link Externo GolglePlus"></a>
 
       </div>
 </footer>
-	</body>
-
-
+</body>
 </html>

@@ -1,0 +1,132 @@
+@font-face {
+   font-family: "Topzera";
+   src: url("Fontes/CHOPS__.TTF") format("truetype");
+}
+
+#pesquisa{
+  border-radius:25px;
+  height: 5%;
+}
+
+/*Fixando o menu do Cliente*/
+.Fixar{
+  position:fixed;
+  width: 100%;
+}
+Header .Fixar{
+  position: fixed;
+  width: 100%;
+}
+
+body{
+  background-color: white;
+}
+
+/*banner Principal*/
+#Principal{
+  margin-top: 0%;
+  align-items: center;
+}
+#Principal h1{
+  margin-left: 40%;
+  font-size: 80;
+  font-family: "Topzera";
+}
+#Principal h2{
+  font-size: 35;
+  font-family: "Topzera";
+}
+padding: 0%;
+margin: 0%;
+#Principal ol{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#Principal ol li{
+  text-align: center;
+  border: none;
+  font-size: 17;
+  display: inline-block;
+  width: 49%;
+  height: 75%;
+  margin-left: 0%;
+}
+#Principal ol li img{
+  padding-top: 0%;
+  height: 100%;
+  width: 100%;
+}
+#Principal ol li div{
+  margin-left: 5%;
+  margin-top: 0%;
+}
+
+#Principal ol li div ul li{
+  width: 100%;
+  height: 17%;
+  text-align: justify;
+}
+
+/*Galeria de imagens*/
+#Images  ol{
+  padding-right: 2%;
+  padding-left: 2%;
+}
+#Images  ol li{
+  padding: 1%;
+  width: 33%;
+  height: 40%;
+  display: inline-block;
+}
+#Images  ol li img{
+  width: 100%;
+  height: 100%;
+}
+/*Detales do Pacote*/
+.Informacao{
+  background-color: #E9E9E9;
+}
+.Informacao h2{
+  font-size: 40;
+  padding-left: 37%;
+  margin-top: 4%;
+  padding-top: 2%;
+}
+.Informacao li{
+  font-size: 27;
+  margin-bottom: 1%;
+  margin-left: 8%;
+}
+
+
+#BtnConversao{
+  margin-left: 40%;
+  height:10%;
+  width:20%;
+  font-size:30;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+/*Rodapé*/
+.container {
+  margin: 0 auto;
+  width: 80%;
+  position: center;
+}
+footer{
+  width: 100%;
+  padding-top: 3%;
+  height: 15%;
+  clear: both;
+  background-color: black;
+}
+.container a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+  /* image replacement */
+  display: block;
+  float: right;
+  margin-left: 3%;
+}
