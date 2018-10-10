@@ -22,6 +22,7 @@
     text-align: center;
   }
   .not_img{
+  margin-top: 0%;
 	width:100%;
 	height:65%;
 	}
@@ -125,13 +126,27 @@ footer{
   margin-top: 5%;
   margin-bottom: 3%;
 }
+
+/*Pesquisa Destinos*/
+#AtalhoPesquisa{
+  border-radius: 20px;
+  opacity: 0.91;
+  background-color: white;
+  width:60%;
+  height:55%;
+  margin-top:7%;
+  margin-left:20%;
+  z-index:2;
+  position: absolute;
+}
+
 @media (max-width: 720px) {
   .not_img{
     width:100%;
-    height:90%;
+    height:70%;
   }
   .Fixar{
-    position: absolute;
+    position: relative;
     width: 100%;
   }
 
@@ -181,5 +196,17 @@ footer{
     font-size:30;
     margin-top: 5%;
     margin-bottom: 3%;
+  }
+  #AtalhoPesquisa{
+    opacity: 1;
+    border-radius: 0;
+    background-color: white;
+    width:100%;
+    height:90%;
+    margin-top:3%;
+    margin-left:0%;
+    margin-bottom: 0%;
+    z-index:0;
+    position: relative;
   }
 }

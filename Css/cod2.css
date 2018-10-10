@@ -35,9 +35,9 @@ body{
 #Principal h2{
   font-size: 35;
   font-family: "Topzera";
+  margin-top: 0%;
 }
-padding: 0%;
-margin: 0%;
+
 #Principal ol{
   padding-left: 2%;
   padding-right: 2%;
@@ -48,7 +48,7 @@ margin: 0%;
   font-size: 17;
   display: inline-block;
   width: 49%;
-  height: 75%;
+  height: 70%;
   margin-left: 0%;
 }
 #Principal ol li img{
@@ -93,6 +93,7 @@ margin: 0%;
 .Informacao{
   background-color: #E9E9E9;
 }
+
 .Informacao h2{
   font-size: 40;
   padding-left: 37%;
@@ -104,7 +105,6 @@ margin: 0%;
   margin-bottom: 1%;
   margin-left: 8%;
 }
-
 
 #BtnConversao{
   margin-left: 40%;
@@ -136,4 +136,89 @@ footer{
   display: block;
   float: right;
   margin-left: 3%;
+}
+
+@media (max-width: 720px) {
+  .not_img{
+    width:100%;
+    height:90%;
+  }
+  .Fixar{
+    position: absolute;
+    width: 100%;
+  }
+  #Principal{
+    margin-top: 0%;
+    align-items: center;
+  }
+  #Principal h1{
+    margin-top: 100%;
+    margin-left: 17%;
+    font-size: 80;
+    font-family: "Topzera";
+  }
+  #Principal h2{
+    font-size: 35;
+    font-family: "Topzera";
+    margin-top: 0%;
+  }
+
+  #Principal ol{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #Principal ol li{
+    text-align: center;
+    border: none;
+    font-size: 14;
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin-left: 0%;
+  }
+  #Principal ol li div ul li{
+    width: 100%;
+    height: 12%;
+    text-align: justify;
+  }
+
+  /*Galeria de imagens*/
+  #Images  ol{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #Images  ol li{
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 40%;
+    display: block;
+  }
+  #Images  ol li img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #BtnConversao{
+    margin-left: 10%;
+    margin-right: 10%;
+    height:10%;
+    width:80%;
+    font-size:30;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .Informacao h2{
+    font-size: 40;
+    padding-left: 11%;
+    margin-top: 4%;
+    padding-top: 2%;
+  }
+  .Informacao li{
+    font-size: 27;
+    margin-bottom: 1%;
+    margin-left: 8%;
+  }
+
 }
