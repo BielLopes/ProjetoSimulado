@@ -39,8 +39,8 @@ body{
 }
 
 #Principal ol{
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1%;
+  padding-right: 0%;
 }
 #Principal ol li{
   text-align: center;
@@ -48,7 +48,7 @@ body{
   font-size: 17;
   display: inline-block;
   width: 49%;
-  height: 70%;
+  height: 85%;
   margin-left: 0%;
 }
 #Principal ol li img{
@@ -66,7 +66,10 @@ body{
   height: 17%;
   text-align: justify;
 }
+/*Para o texto persuasivo*/
+#info{
 
+}
 /*Galeria de imagens*/
 #Images  ol{
   padding-right: 2%;
@@ -86,8 +89,8 @@ body{
   transition: 0.2s cubic-bezier(.13, .98, 0, 0);
   border-radius: 10px;
   box-shadow: 0 0 5px #333;
-  width: 103%;
-  height: 103%;
+  width: 105%;
+  height: 105%;
 }
 /*Detales do Pacote*/
 .Informacao{
@@ -162,6 +165,9 @@ footer{
     font-family: "Topzera";
     margin-top: 0%;
   }
+  #Principal h3{
+    color: orange;
+  }
 
   #Principal ol{
     padding-left: 5%;
@@ -178,7 +184,7 @@ footer{
   }
   #Principal ol li div ul li{
     width: 100%;
-    height: 12%;
+    height: 11%;
     text-align: justify;
   }
 
@@ -202,7 +208,7 @@ footer{
   #BtnConversao{
     margin-left: 10%;
     margin-right: 10%;
-    height:10%;
+    height:13%;
     width:80%;
     font-size:30;
     margin-top: 5%;
@@ -219,6 +225,13 @@ footer{
     font-size: 27;
     margin-bottom: 1%;
     margin-left: 8%;
+  }
+  #info{
+    margin-bottom: 25%;
+  }
+  #info h3{
+    margin-bottom: 0%;
+    margin-top: 5%;
   }
 
 }
