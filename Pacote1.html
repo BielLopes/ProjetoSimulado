@@ -2,6 +2,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="Fontes/stylesheet.css">
+<link rel="stylesheet" href="Fontes/CHOPS.css">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/cod2.css">
 <link rel="stylesheet" href="Css/normalize.css">
@@ -40,54 +42,6 @@
     </div>
   </div>
 </div>
-<div id="Foto1" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto1').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl1.jpg"></h2></p>
-    </div>
-  </div>
-</div>
-<div id="Foto2" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto2').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl2.jpg"></h2></p>
-    </div>
-  </div>
-</div>
-<div id="Foto3" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto3').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl3.jpg"></h2></p>
-    </div>
-  </div>
-</div>
-<div id="Foto4" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto4').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl4.jpg"></h2></p>
-    </div>
-  </div>
-</div>
-<div id="Foto5" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto5').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl5.jpg"></h2></p>
-    </div>
-  </div>
-</div>
-<div id="Foto6" class="w3-modal" style="align-items: center;">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('Foto6').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><img style="width:100%; height:80%" src="imagens/Hnl6.jpg"></h2></p>
-    </div>
-  </div>
-</div>
 
 <script language="Javascript">
 function sumir(i) {
@@ -120,37 +74,66 @@ function aparecer(i) {
 </nav>
 </Header>
 </br>
+<section id="Carretilha" class="Slaides">
+  <h1 style="font-family: 'Topzera'; color:#6495ED">Honolulu</h1>
+
+<div class="w3-content w3-section" style="max-width:100%;">
+  <img class="mySlides not_img" src="imagens/Hnl4.jpg" >
+  <img class="mySlides not_img" src="imagens/15.jpg" >
+  <img class="mySlides not_img" src="imagens/16.jpg" >
+  <img class="mySlides not_img" src="imagens/10.jpg" >
+  <img class="mySlides not_img" src="imagens/13.jpg" >
+  <img class="mySlides not_img" src="imagens/Hnl1.jpg" >
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+  }
+</script>
+</section>
+
 <section id="Principal">
-  <h1>Honolulu</h1>
-  <ol>
-    <li><img src="imagens/Honolulu.jpg" alt="Imagem Principal de Honolulu"></li>
-    <li id="info">
-    <div>
+
+
+    <div style="margin-top: 3%;">
       <h2 style="color:orange;">O Céu Na Terra</h2>
-      <p>Honolulu é a capital do Havaí, uma cidade única em todo o planete. </br> Alto padrão do entreterimento, pois lá você vai disfrutar de:</p>
+      <p style="color:#6495ED; font-family: 'Topzinha'; font-size: 35;">Honolulu é a capital do Havaí, uma cidade única em todo o planete. </br> Alto padrão do entreterimento, pois lá você vai disfrutar de:</p>
     </br>
-      <ul>
-        <li><h3 style="color:orange;">Hospedagem</h3>Os melhores hotéis e resortes do mundo.</li>
-        <li><h3 style="color:orange;">Surf</h3>As ondas mais famosas no mundo.</li>
-        <li><h3 style="color:orange;">Cultura</h3>Uma cultura única em todo o mundo.</li>
-        <li><h3 style="color:orange;">Popularidade</h3>O destino mais procurado para praias.</br></br></li>
+      <ul style="width: 100%; height: 17%; display: inline;">
+        <li style="color:#6495ED; font-family: 'Topzinha'; font-size: 35;" > <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Hospedagem</h3>Os melhores hotéis e resortes do mundo.</li>
+        <li style="color:#6495ED; font-family: 'Topzinha'; font-size: 35;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Surf</h3>As ondas mais famosas no mundo.</li>
+        <li style="color:#6495ED; font-family: 'Topzinha'; font-size: 35;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Cultura</h3>Uma cultura única em todo o mundo.</li>
+        <li style="color:#6495ED; font-family: 'Topzinha'; font-size: 35;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Popularidade</h3>O destino mais procurado para praias.</br></br></li>
       </ul>
     </div>
-    </li>
-  </ol>
 </section>
 <section name="imgs">
-  <div id="Images">
-  <ol>
-    <li><a href="#imgs" onclick="document.getElementById('Foto1').style.display='block'"><img src="imagens/Hnl1.jpg"></a></li>
-    <li><a href="#imgs" onclick="document.getElementById('Foto2').style.display='block'"><img src="imagens/Hnl2.jpg"></a></li>
-    <li><a href="#imgs" onclick="document.getElementById('Foto3').style.display='block'"><img src="imagens/Hnl3.jpg"></a></li>
-    <li><a href="#imgs" onclick="document.getElementById('Foto4').style.display='block'"><img src="imagens/Hnl4.jpg"></a></li>
-    <li><a href="#imgs" onclick="document.getElementById('Foto5').style.display='block'"><img src="imagens/Hnl5.jpg"></a></li>
-    <li><a href="#imgs" onclick="document.getElementById('Foto6').style.display='block'"><img src="imagens/Hnl6.jpg"></a></li>
-  </ol>
-</div>
-  <div class="Informacao">
+<div class="Informacao">
   <h2>Detalhes do Pacote</h2>
   <ul>
     <li>Vantagem 1</li>
