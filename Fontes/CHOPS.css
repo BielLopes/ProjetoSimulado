@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Topzinha';
-    src: url('fonts/CHOPS.eot');
-    src: url('fonts/CHOPS.eot') format('embedded-opentype'),
-         url('fonts/CHOPS.woff2') format('woff2'),
-         url('fonts/CHOPS.woff') format('woff'),
-         url('fonts/CHOPS.ttf') format('truetype'),
-         url('fonts/CHOPS.svg#CHOPS') format('svg');
-}
