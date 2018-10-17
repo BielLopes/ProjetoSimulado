@@ -22,9 +22,8 @@ Header .Fixar{
   width: 100%;
 }
 
-
 body{
-  background-color: #404094;
+  background-color: #191970;
 }
 .dot {
   height: 15px;
@@ -48,7 +47,7 @@ body{
   align-items: center;
 }
 .Slaides h1{
-  padding-left: 39%;
+  padding-left: 26%;
   font-size: 120;
   font-family: 'Topzin';
 }

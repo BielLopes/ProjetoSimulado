@@ -12,6 +12,16 @@
 #Carretilha {
   align-items: center;
 }
+.navegation{
+  width: 100%;
+  display: inline;
+}
+.navegation li{
+  background-color: white;
+}
+.navegation form li{
+  display: inline;
+}
 .Slaides img{
   height: 80%;
   width: 97%;
@@ -22,9 +32,8 @@ Header .Fixar{
   width: 100%;
 }
 
-
 body{
-  background-color: #404094;
+  background-image: linear-gradient(#87CEEB, #E9E9);
 }
 .dot {
   height: 15px;
@@ -67,7 +76,7 @@ body{
   border: none;
   font-size: 17;
   width: 100%;
-  height: 50%;
+  height: 75%;
   margin-bottom:42.5%;
 }
 #Principa div{
@@ -96,9 +105,6 @@ body{
 }
 
 /*Detales do Pacote*/
-.Informacao{
-  background-color: #E9E9E9;
-}
 
 .Informacao h2{
   font-size: 40;

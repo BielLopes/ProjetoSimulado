@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Toper';
+    src: url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.eot');
+    src: url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.eot') format('embedded-opentype'),
+         url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.woff2') format('woff2'),
+         url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.woff') format('woff'),
+         url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.ttf') format('truetype'),
+         url('fonts-2/TeamWorkFont_Regular_bySitujuh_7NTypes.svg#TeamWorkFont_Regular_bySitujuh_7NTypes') format('svg');
+}
