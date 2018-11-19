@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<section>
+<Header class="Fixar" >
 
   <script>
   function myFunction3() {
@@ -24,32 +24,19 @@
 
 
 
-<!--Avisos de Login-->
-<div id="LoginIncorreto" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="sumir('LoginIncorreto')" class="w3-closebtn">&times;</span>
-      <p><h2>Nome de Usuário ou Senha INCORREO!!!</h2></p>
-       </div>
-  </div>
-</div>
-
-<!--Fim dos Avisos de LOGIM-->
-
-
 <div id="contatos" class="w3-modal">
   <div class="w3-modal-content">
     <div class="w3-container">
       <span onclick="document.getElementById('contatos').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><h2>Email: calendario.cedaf@gmail.com</h2></p>
+      <p><h2>Email: danutur.turismo@gmail.com </br> Telefone: (##) ####-####</h2></p>
        </div>
   </div>
 </div>
-<div id="sobre" class="w3-modal">
+<div id="sobre" class="w3-modal" style="align-items: center;">
   <div class="w3-modal-content">
     <div class="w3-container">
       <span onclick="document.getElementById('sobre').style.display='none'" class="w3-closebtn">&times;</span>
-      <p><h2>Danutur - Pacotes de Viajens</h2></p>
+      <p><h2>Desenvolvido por: </br></br><img src="imagens/LogoSolu6.png"></h2></p>
     </div>
   </div>
 </div>
@@ -69,22 +56,109 @@ function aparecer(i) {
 
 <nav >
 <ul class="w3-navbar w3-card-2 w3-white ">
-  <li><a href="index.php" class="w3-grey"><img src="imagens/home.png" style="width:19px;margin-bottom:-2px;">Danutur</a></li>
+  <li><a href="index.html" class="w3-grey"><img src="imagens/logo.png" style="width:19px;margin-bottom:-2px;">Danutur</a></li>
   <li><a href="#">Destinos</a></li>
   <li><a href="#">Hotéis</a></li>
+  <li><a href="#">Passagens Aérias</a></li>
   <li><a href="#">Promoções</a></li>
+
   <li><a href="#" onclick="document.getElementById('contatos').style.display='block'">Contatos</a></li>
   <li><a href="#" onclick="document.getElementById('sobre').style.display='block'">Sobre</a></li>
+  <li class="w3-right" style=" margin-top:0%"><a href="#">Login</a></li>
+  <li class="w3-right" style=" margin-top:0%"><a href="#" style=" margin-top:0%">Cadastrar-se</a></li>
   <form id="pesquisa_menu" method="get">
-  <li class="w3-right" style="padding-bottom: 0.1%; padding-top:0.1%; margin-left:0.5%; margin-right: 0.5%;"><a href="#" onClick="document.getElementById('pesquisa_menu').submit();"><img src="imagens/pesquisa.jpeg" style="width:30px;"></a></li>
-  <li class="w3-right"><input class="w3-input w3-border" type="text"></li>
+  <li class="w3-right" style=" margin-left:0.5%; margin-right: 0.5%;"><a href="#" onClick="document.getElementById('pesquisa_menu').submit();"><img src="imagens/pesquisa.jpeg" style="width:30px;"></a></li>
+  <li class="w3-right"><input id="pesquisa" class="w3-input w3-border" type="text"></li>
   </form>
-
 </ul>
 </nav>
+</Header>
+<section id="AtalhoPesquisa" >
+  <div class="w3-bar w3-border-bottom w3-light-grey intronav">
+    <ul class="w3-navbar w3-card-3 w3-white ">
+      <li><a onclick="openC('Pacote')">Pacotes de Viagens</a></li>
+      <li><a onclick="openC('Passagem')">Passagens Aérias</a></li>
+    </ul>
+  </div>
+  <div id="Pacote" class="w3-container city w3-animate-opacity">
+    <h2>Pacote de viagens</h2>
+    <form class="w3-container">
+
+      <label class="w3-text-blue"><b>Destino</b></label>
+      <input class="w3-input w3-border" type="text">
+      <div style="float: left;clear: left;">
+        <input class="w3-check" type="checkbox" checked="checked">
+        <label>Seguro Incluso</label>
+      </div>
+      <div style="float: left;clear: left;">
+        <input class="w3-check" type="checkbox">
+        <label>Aluguel do Carro</label>
+      </div>
+      <div style="float: right;clear: right; margin-right:6.7%;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Fechado" checked>
+        <label>Pacotes Fechado</label>
+      </div>
+      <div style="float: right;clear: right;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Personalizaveis">
+        <label>Pacotes Personalizaveis</label>
+      </div>
+      <div style="float: left;margin-left:3%; clear: left;margin-top:4%;">
+        <label class="w3-text-blue"><b>Ida:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <div style="float: left;margin-left:5%;margin-top:4%;">
+        <label class="w3-text-blue"><b>Volta:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <button class="w3-btn w3-blue" style="float: right;clear: right; margin-top:6%; margin-right:5%; margin-bottom:1%;">Procurar</button>
+    </form>
+  </div>
+
+  <div id="Passagem" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Passagens de Avião</h2>
+    <form class="w3-container">
+
+      <label class="w3-text-blue"><b>Origem</b></label>
+      <input class="w3-input w3-border" type="text">
+
+      <label class="w3-text-blue"><b>Destino</b></label>
+      <input class="w3-input w3-border" type="text">
+
+      <div style="float: left;clear: left;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Fechado" checked>
+        <label>Pimeira Classe</label>
+      </div>
+      <div style="float: left;clear: left;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Personalizaveis">
+        <label>Econômica</label>
+      </div>
+      <div style="float: right;margin-right:3%; clear: right;">
+        <label class="w3-text-blue"><b>Volta:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <div style="float: right;margin-right:5%;">
+        <label class="w3-text-blue"><b>Ida:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <button class="w3-btn w3-blue" style="float: right;clear: right; margin-top:3%; margin-right:5%;">Procurar</button>
+
+    </form>
+  </div>
 </section>
+  <script>
+  function openC(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+  }
+  </script>
 <section >
-<div class="w3-content w3-section" style="max-width:95%;">
+</br>
+
+<div class="w3-content w3-section" style="max-width:100%;">
   <img class="mySlides not_img" src="imagens/H1.jpg" >
   <img class="mySlides not_img" src="imagens/H2.jpg" >
   <img class="mySlides not_img" src="imagens/H3.jpg" >
@@ -119,9 +193,37 @@ function showSlides() {
 </section>
 <section>
   <br/>
-  <br/>
-  <br/>
 </section>
+
+<!--Ofertas-->
+<section id="Ofertas">
+  <h2 class="Ofertante" style="">Ofertas</h2>
+  <ol>
+    <li>
+        <a href="Pacote1.html">
+        <img src="imagens/imagem.jpg" alt="Honolulu">
+        <figcaption  >Pacte com tudo incluso para Honolulu    </br>   R$5600,00</figcaption>
+        </a>
+    </li>
+    <li>
+        <a href="Destino2.html">
+        <img src="imagens/H2.jpg" alt="Destino2">
+
+        <figcaption > Pacte com tudo incluso para Destino2     </br>  R$######</figcaption>
+        </a>
+    </li>
+    <li>
+        <a href="Destino3.html">
+        <img src="imagens/H1.jpg" alt="Destino3">
+        <figcaption style="font-family: 'Topzera'">Pacte com tudo incluso para Destino3   </br>    R$#######</figcaption>
+        </a>
+   </li>
+  </ol>
+  <button id="BtnConversao" style="" class="w3-btn w3-blue w3-round">Compre Agora</button>
+  </br>
+  </br>
+</section>
+
 <footer id="rodape"  >
       <!--rodape-->
       <div class="container">

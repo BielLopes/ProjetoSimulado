@@ -1,0 +1,238 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="Fontes/stylesheet.css">
+<link rel="stylesheet" href="Fontes/CHOPS.css">
+<link rel="stylesheet" href="Fontes/PokerInOctoberDemo.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/cod2.css">
+<link rel="stylesheet" href="Css/normalize.css">
+<title>Pacote Para Honolulu</title>
+</head>
+
+<body>
+<Header class="Fixar" >
+
+  <script>
+  function myFunction3() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+
+
+<div id="contatos" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('contatos').style.display='none'" class="w3-closebtn">&times;</span>
+      <p><h2>Email: danutur.turismo@gmail.com </br> Telefone: (##) ####-####</h2></p>
+       </div>
+  </div>
+</div>
+<div id="sobre" class="w3-modal" style="align-items: center;">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('sobre').style.display='none'" class="w3-closebtn">&times;</span>
+      <p><h2>Desenvolvido por: </br></br><img style="width:80%; height:70%" src="imagens/LogoSolu6.png"></h2></p>
+    </div>
+  </div>
+</div>
+
+<script language="Javascript">
+function sumir(i) {
+    document.getElementById(i).style.display = "none";
+}
+
+function aparecer(i) {
+    document.getElementById(i).style.display = "initial";
+
+}
+</script>
+
+<nav >
+<ul class="w3-navbar w3-card-2 w3-white ">
+  <li><a href="index.html" class="w3-grey"><img src="imagens/logo.png" style="width:19px;margin-bottom:-2px;">Danutur</a></li>
+  <li><a href="#">Destinos</a></li>
+  <li><a href="#">Hotéis</a></li>
+  <li><a href="#">Passagens Aérias</a></li>
+  <li><a href="#">Promoções</a></li>
+
+  <li><a href="#" onclick="document.getElementById('contatos').style.display='block'">Contatos</a></li>
+  <li><a href="#" onclick="document.getElementById('sobre').style.display='block'">Sobre</a></li>
+  <li class="w3-right" style=" margin-top:0%"><a href="#">Login</a></li>
+  <li class="w3-right" style=" margin-top:0%"><a href="#" style=" margin-top:0%">Cadastrar-se</a></li>
+  <form id="pesquisa_menu" method="get">
+  <li class="w3-right" style=" margin-left:0.5%; margin-right: 0.5%;"><a href="#" onClick="document.getElementById('pesquisa_menu').submit();"><img src="imagens/pesquisa.jpeg" style="width:30px;"></a></li>
+  <li class="w3-right"><input id="pesquisa" class="w3-input w3-border" type="text"></li>
+  </form>
+</ul>
+</nav>
+</Header>
+</br>
+<section id="Carretilha" class="Slaides">
+  <h1 style="font-family: 'Topzera'; color:#6495ED">Honolulu</h1>
+
+<div class="w3-content w3-section" style="max-width:100%;">
+  <img class="mySlides not_img" src="imagens/Hnl4.jpg" >
+  <img class="mySlides not_img" src="imagens/15.jpg" >
+  <img class="mySlides not_img" src="imagens/16.jpg" >
+  <img class="mySlides not_img" src="imagens/10.jpg" >
+  <img class="mySlides not_img" src="imagens/13.jpg" >
+  <img class="mySlides not_img" src="imagens/Hnl1.jpg" >
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+  }
+</script>
+</section>
+
+<section id="Principal">
+
+
+    <div style="margin-top: 3%;">
+      <h2 style="color:orange;">O Céu Na Terra</h2>
+      <p style="color:#6495ED; font-family: 'Poker'; font-size: 27;">Honolulu e a capital do Havai, uma cidade unica em todo o planete. </br> Alto padrao do entreterimento, pois la voce vai disfrutar de:</p>
+    </br>
+      <ul style="width: 100%; height: 17%; display: inline;">
+        <li style="color:#6495ED; font-family: 'Poker'; font-size: 27;" > <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Hospedagem</h3>Os melhores hoteis e resortes do mundo.</li>
+        <li style="color:#6495ED; font-family: 'Poker'; font-size: 27;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Surf</h3>As ondas mais famosas no mundo.</li>
+        <li style="color:#6495ED; font-family: 'Poker'; font-size: 27;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Cultura</h3>Uma cultura unica em todo o mundo.</li>
+        <li style="color:#6495ED; font-family: 'Poker'; font-size: 27;"> <h3 style="color:orange; font-size: 45; font-family: 'Topzera'">Popularidade</h3>O destino mais procurado para praias.</br></br></li>
+      </ul>
+    </div>
+</section>
+<section name="imgs" class="Informacao">
+<div class="Informacao">
+  <h2>Detalhes do Pacote</h2>
+  <ul>
+    <li>Vantagem 1</li>
+    <li>Vantagem 2</li>
+    <li>Vantagem 3</li>
+    <li>Vantagem 4</li>
+  </ul>
+</div>
+<button id="BtnConversao" style="" class="w3-btn w3-blue w3-round">Compre Agora</button>
+</br>
+</br>
+</br>
+<section id="AtalhoPesquisa" >
+  <div class="w3-bar w3-border-bottom w3-light-grey intronav">
+    <ul class="w3-navbar w3-card-3 w3-white ">
+      <li><a onclick="openC('Pacote')">Pacotes de Viagens</a></li>
+      <li><a onclick="openC('Passagem')">Passagens Aérias</a></li>
+    </ul>
+  </div>
+  <div id="Pacote" class="w3-container city w3-animate-opacity">
+    <h2>Pacote de viagens</h2>
+    <form class="w3-container">
+
+      <label class="w3-text-blue"><b>Destino</b></label>
+      <input class="w3-input w3-border" type="text">
+      <div style="float: left;clear: left;">
+        <input class="w3-check" type="checkbox" checked="checked">
+        <label>Seguro Incluso</label>
+      </div>
+      <div style="float: left;clear: left;">
+        <input class="w3-check" type="checkbox">
+        <label>Aluguel do Carro</label>
+      </div>
+      <div style="float: right;clear: right; margin-right:6.7%;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Fechado" checked>
+        <label>Pacotes Fechado</label>
+      </div>
+      <div style="float: right;clear: right;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Personalizaveis">
+        <label>Pacotes Personalizaveis</label>
+      </div>
+      <div style="float: left;margin-left:3%; clear: left;margin-top:4%;">
+        <label class="w3-text-blue"><b>Ida:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <div style="float: left;margin-left:5%;margin-top:4%;">
+        <label class="w3-text-blue"><b>Volta:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <button class="w3-btn w3-blue" style="float: right;clear: right; margin-top:6%; margin-right:5%; margin-bottom:1%;">Procurar</button>
+    </form>
+  </div>
+
+  <div id="Passagem" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Passagens de Avião</h2>
+    <form class="w3-container">
+
+      <label class="w3-text-blue"><b>Origem</b></label>
+      <input class="w3-input w3-border" type="text">
+
+      <label class="w3-text-blue"><b>Destino</b></label>
+      <input class="w3-input w3-border" type="text">
+
+      <div style="float: left;clear: left;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Fechado" checked>
+        <label>Pimeira Classe</label>
+      </div>
+      <div style="float: left;clear: left;">
+        <input class="w3-radio" type="radio" name="TipoPacote" value="Personalizaveis">
+        <label>Econômica</label>
+      </div>
+      <div style="float: right;margin-right:3%; clear: right;">
+        <label class="w3-text-blue"><b>Volta:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <div style="float: right;margin-right:5%;">
+        <label class="w3-text-blue"><b>Ida:</b></label>
+        <input class="w3-input w3-border" type="date">
+      </div>
+      <button class="w3-btn w3-blue" style="float: right;clear: right; margin-top:3%; margin-right:5%;">Procurar</button>
+
+    </form>
+  </div>
+</section>
+</br>
+</section>
+
+
+
+<footer id="rodape">
+      <!--rodape-->
+      <div class="container">
+        <img src="imagens/logo.png" alt="Logo da Danutur">
+        <a href="facebook.com" style=""><img src="imagens/facebook.png" alt="Link Externo Facebook"></a>
+        <a href="twitter.com"><img src="imagens/twitter.png" alt="Link Externo twitter"></a>
+        <a href="googleplus.com"><img src="imagens/googleplus.png" alt="Link Externo GolglePlus"></a>
+
+      </div>
+</footer>
+</body>
+</html>
